@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>WebLeertaak</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/progress.css" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <script async src="./js/progress.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li><a href="./index.html" title="Home">Home</a></li>
+        <li><a href="./settings.html" title="Instellingen">Instellingen</a></li>
+        <li><a href="./progress.html" title="Voortgang" class="active">Voortgang</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main">
+        <h2>Voortgang</h2>
+        <table>
+          <tr>
+            <th>Vakcode</th>
+            <th>ECTS</th>
+            <th>Datum Behaald</th>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1PROG-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2016-11-10" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1CSN-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2016-11-07" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1ICOR-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2016-10-30" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1MOD-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2017-01-19" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1PROF-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2017-01-31" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1IDP-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2017-02-10" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1AUI-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2017-03-02" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1OODC-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2017-03-07" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="vakcode" value="TICT-V1GP-15" /></td>
+            <td><input type="number" id="ects" value="5" max="60" /></td>
+            <td><input type="date" id="dateEarned" value="2017-04-01" /></td>
+          </tr>
+        </table>
+      </div>
+      <aside>
+        <div>
+          <div class="title">Student:</div>
+          <img src="./img/graph.jpg" alt="Look at that fancyness." />
+        </div>
+        <input id="showPopup" type="button" value="Bereken Studietempo" />
+      </aside>
+    </main>
+    <footer>
+      <div class="left">Auteur: Dany Sluijk (V1C)</div>
+      <div class="center">
+        Deze Opdracht is gemaakt in het kader van het vak Analyse &amp; User Interfaces.
+      </div>
+      <div class="right">Datum: 15-feb-2017</div>
+    </footer>
+    <div class="hidden" id="popup">
+      <h3>StudieTempo</h3>
+      <div class="content">
+        <p>
+          Je hebt tot nu toe <span id="popupEcts"></span> ECTS behaald.
+        </p>
+        <p>
+          Je huidige studietempo is:
+          <span id="popupEctsMonth"></span> ECTS / mnd.
+        </p>
+        <p>
+          Op basis van dit studietempo heb je <span id="popupTotalMonths"></span> mnd nodig voor je P.
+        </p>
+        <input id="closePopup" type="button" value="OK" />
+      </div>
+    </div>
+  </body>
+</html>

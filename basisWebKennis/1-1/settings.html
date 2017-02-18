@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>WebLeertaak</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/settings.css" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  </head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li><a href="./index.html" title="Home">Home</a></li>
+        <li><a href="./settings.html" title="Instellingen" class="active">Instellingen</a></li>
+        <li><a href="./progress.html" title="Voortgang">Voortgang</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Instellingen</h2>
+      <form class="" action="settings.html" method="post">
+        <div class="settings-left">
+          <div class="item">
+            <label for="firstName" class="title">Voornaam:</label>
+            <input type="text" name="firstName" id="firstName" value="" required />
+          </div>
+          <div class="item">
+            <label for="lastName" class="title">Achternaam:</label>
+            <input type="text" name="lastName" id="lastName" value="" required />
+          </div>
+          <div class="item">
+            <label for="studentNumber" class="title">Studentennr:</label>
+            <input type="number" name="studentNumber" id="studentNumber" value="" required />
+          </div>
+          <div class="item">
+            <label for="email" class="title">E-mail:</label>
+            <input type="email" name="email" id="email" value=""
+            pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" required />
+          </div>
+          <div class="item">
+            <label for="dateOfBirth" class="title">Geboortedatum:</label>
+            <input type="date" name="dayOfBirth" id="dateOfBirth" value="" rqeuired />
+          </div>
+        </div>
+        <div class="settings-right">
+          <div class="item">
+            <label for="class" class="title">Klas:</label>
+            <select name="class" id="class" required>
+              <option value="" selected disabled>Kies een klas</option>
+              <option value="v1a">V1A</option>
+              <option value="v1c">V1C</option>
+              <option value="v1g">V1G</option>
+              <option value="v1l">V1L</option>
+            </select>
+          </div>
+          <div class="item">
+            <label class="title">Gekozen Studierichting:</label>
+            <div class="option">
+              <input type="radio" name="study" class="study" id="studySne" value="sne" />
+              <label for="studySne">SNE</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="study" class="study" id="studyBim" value="bim" />
+              <label for="studyBim">BIM</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="study" class="study" id="studySie" value="sie" />
+              <label for="studySie">SIE</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="study" class="study" id="studyTi" value="ti" />
+              <label for="studyTi">TI</label>
+            </div>
+          </div>
+          <div class="item">
+            <label class="title">Propedeuse behaald:</label>
+            <input type="radio" name="prop" id="propYes" value="true" />
+            <label for="propYes">Ja</label>
+            <input type="radio" name="prop" id="propNo" value="false" />
+            <label for="propNo">Nee</label>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="left">Auteur: Dany Sluijk (V1C)</div>
+      <div class="center">
+        Deze Opdracht is gemaakt in het kader van het vak Analyse &amp; User Interfaces.
+      </div>
+      <div class="right">Datum: 15-feb-2017</div>
+    </footer>
+  </body>
+</html>

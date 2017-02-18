@@ -1,0 +1,18 @@
+#logo {
+  width: 15vw;
+  float: right;
+}
+
+#indexText {
+  float: left;
+  width: 60vw;
+}
+
+#bottomImage {
+  margin: 5vh 40%;
+  clear: both;
+}
+
+#bottomImage>img {
+  width: 30vw;
+}

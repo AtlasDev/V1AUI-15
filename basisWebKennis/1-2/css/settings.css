@@ -1,0 +1,24 @@
+form {
+  display: flex;
+}
+
+form .settings-left {
+  width: 50vw;
+}
+
+form .settings-right {
+  width: 50vw;
+}
+
+form .settings-left input {
+  width: 250px;
+}
+
+form .item {
+  margin: 10px;
+  display: flex;
+}
+
+form .title {
+  width: 30%;
+}
