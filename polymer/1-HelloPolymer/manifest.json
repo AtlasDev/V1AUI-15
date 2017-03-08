@@ -1,0 +1,7 @@
+{
+  "name": "1-HelloPolymer",
+  "short_name": "1-HelloPolymer",
+  "description": "Hi polymer, how are you?",
+  "start_url": "/",
+  "display": "standalone"
+}

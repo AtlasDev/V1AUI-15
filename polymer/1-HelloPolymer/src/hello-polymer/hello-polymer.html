@@ -1,0 +1,34 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="hello-polymer">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+		<p>How are you doing my friend?</p>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'hello-polymer',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'hello-polymer',
+        },
+      },
+
+    });
+  </script>
+
+  <style media="screen">
+    p {
+      font-style: oblique;
+    }
+  </style>
+</dom-module>
